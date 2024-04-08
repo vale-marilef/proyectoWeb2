@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario HTML/CSS</title>
+</head>
+<body>
+   
+    <div class="fondo"> 
+        <form action="#">
+            <fieldset>
+            <legend>Datos básicos sobre vos</legend>
+            <h4>¿Cómo te llamas?...</h4>
+            <div class="contenedor contenedorText">
+                <input type="text" placeholder="Mi nombre es..." required>
+            </div>
+            <h4>¿Cuál es tú e-mail de contacto?</h4>
+            <div class="contenedor contenedorText">
+                <input type="email" placeholder="TuEmail@gmail.com" required>
+            </div>
+            <h4>¿Donde vives? escribe barrio, ciudad</h4>
+            <div class="contenedor contenedorText">
+                <input type="text" placeholder="Vivo en..." required>
+            </div>
+            <h4>Selecciona tú pais:</h4>
+            <select name="pais">
+              <option value="" selected="selected">- Despliega aquí -</option>
+              <option value="1">Argentina</option>
+              <option value="2">España</option>
+              <option value="3">México</option>
+              <option value="4">Guatemala</option>
+              <option value="5">Honduras</option>
+              <option value="7">El Salvador</option>
+              <option value="8">Venezuela</option>
+              <option value="9">Colombia</option>
+              <option value="10">Cuba</option>
+              <option value="11">Bolivia</option>
+              <option value="13">Perú</option>
+              <option value="14">Ecuador</option>
+              <option value="15">Paraguay</option>
+              <option value="16">Uruguay</option>
+              <option value="17">Chile</option>
+            </select>
+            <br>
+            <h4>¿Cuál es tú edad?</h4>
+            <div class="contenedor contenedorOpciones">
+                    <input type="radio" name="RangoEdad" value="op1" checked required/>12-14<br>
+                    <input type="radio" name="RangoEdad" value="op2" required/>15-18<br>
+                    <input type="radio" name="RangoEdad" value="op3" required/>19-22<br>
+                    <input type="radio" name="RangoEdad" value="op3" required/>23-26
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Cuentanos como podemos ayudarte</legend>
+                
+                <h4>Selecciona algúnas de las opciones </h4>
+                <div class="contenedor contenedorOpciones">
+                    <input type="checkbox" name="OpcAyuda" value="op1" checked required/>Quiero más información al respecto<br>
+                    <input type="checkbox" name="OpcAyuda" value="op2" required/>Quisiera participar en el club<br>
+                    <input type="checkbox" name="opcAyuda" value="op3" required/>Me gustaria poder visitarles<br>
+                    <input type="checkbox" name="opcAyuda" value="op4" required/>Tener una reunión virtual
+                </div>
+                </fieldset>
+            
+            <button type="submit" class="btn">Registrar</button>
+           
+        </form>
+    </div>
+</body>
+</html>
